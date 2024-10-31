@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+    padding: 20px;
+    background-color: #080202;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+ul.menu-categories {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #9a2929;
+    padding: 10px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+ul.menu-categories li {
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #dcc486;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ul.menu-categories li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    display: block;
+    padding: 10px 0;
+}
+ul.menu-categories li.active a {
+    background-color: #e27107;
+}
+
+
+ul.menu-categories li:hover {
+    background-color: #e27107;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+/* Ajustes uniformes para todas las imágenes */
+.item img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 200px; /* Fija la altura */
+    object-fit: cover; /* Recorta la imagen para llenar el área */
+    border-radius: 8px;
+}
+.item-bebida img {
+    width: 200px; /* Fijamos el ancho */
+    height: 260px; /* Aumentamos la altura para las bebidas */
+    object-fit: cover; /* Para asegurarnos de que la imagen se ajuste sin deformarse */
+    border-radius: 8px;
+}
+
+.menu-items .item-bebida {
+    padding: 30px; /* Aumentamos el padding para la sección de bebidas */
+}
+.item h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.item p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.item button {
+    background-color: #e27107;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.item button:hover {
+    background-color: #444;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .container h2 {
+        font-size: 28px;
+    }
+
+    ul.menu-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .container h2 {
+        font-size: 24px;
+    }
+
+    ul.menu-categories li {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .item img {
+        height: 180px; /* Menor altura en pantallas pequeñas */
+    }
+}
