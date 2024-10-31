@@ -1,425 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../../Capa_Cliente/Estilos/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Img/imagenes/logoredondo.png">
+    <link rel="stylesheet" type="text/css" href="../Estilos/EstiloInicio.css" />
+    <script src="https://kit.fontawesome.com/81581fb069.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Inicio</title>
 </head>
+
 <body>
-     
-    <header >
-             <div class="menu container">
-                <img  class="logo-1" src="../Img/images/logo.svg" alt="">
-                <input type="checkbox" id="menu">
-                <label for="menu">
-                    <img src="Img/images/menu.png" class="menu-icono" alt="">
+
+    <body>
+        
+
+      <header class="header">
+
+            <div class="menu container">
+                <a href="#" class="logo"><img width=70 heigth=50 src="../Img/imagenes/logoredondo.png">D'Acari</a>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">
+                    <img src="../Img/imagenes/menu.png" class="menu-icono" alt="">
                 </label>
-                <nav class="navbar">
-                    <div class="menu-1">
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Productos</a></li>
-                        </ul>
-                    </div>
-                    <img class="logo-2" src="Img/images/logo.svg" alt="">
-                    <div class="menu-2">
-                        <ul>
-                            <li><a href="#">Horario</a></li>
-                        </ul>
-                        <div class="socials">
-                            <a href="#">
-                                <div class="social">
-                                    <img src="Img/images/s1.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="social">
-                                    <img src="Img/images/s2.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="social">
-                                    <img src="Img/images/s3.svg" alt="">
-                                </div>
-                            </a>
+                <ul class="menu-list">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+
+            </div>
+            <div class="header-content container">
+
+                <h1>D'Acari</h1>
+                <p>
+                    Restaurante Iqueño 100% PERUANA, Ofreciendo bebidas frías y calientes, sanguches, pasteles dulces y salados,
+                    donas en un ambiente agradable con aire acondicionado y wifi. #eltiempobienpasado.
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+        </header> 
+
+
+        <section class="coffee">
+
+            <img class="coffee-img" src="" alt="">
+
+            <div class="coffee-content container">
+
+
+                <h2>NUESTROS MEJORES COMBOS</h2>
+                <p class="txt-p">
+                    En Lora Café hemos creado los combos perfectos para que disfrutes al máximo. Nuestros combos están
+                    pensados para ofrecerte la mejor experiencia al mejor precio. ¡No te pierdas nuestras ofertas y ven
+                    a probarlos hoy mismo!
+                </p>
+
+                <div class="container-all">
+                    <input type="radio" id="1" name="image-slide" hidden />
+                    <input type="radio" id="2" name="image-slide" hidden />
+                    <input type="radio" id="3" name="image-slide" hidden />
+
+                    <div class="slide">
+                        <div class="item-slide">
+                            <img src="../Img/imagenes/Slider1.jpg">
+                        </div>
+                        <div class="item-slide">
+                            <img src="../Img/imagenes/Slider2.jpg">
+                        </div>
+                        <div class="item-slide">
+                            <img src="../Img/imagenes/Slider3.jpg">
                         </div>
                     </div>
-                </nav>
-             </div>
 
-             <div class="header-content container">
+                    <div class="pagination">
+                        <label class="pagination-item" for="1">
+                            <img src="../Img/imagenes/Slider1.jpg">
+                        </label>
+                        <label class="pagination-item" for="2">
+                            <img src="../Img/imagenes/Slider2.jpg">
+                        </label>
+                        <label class="pagination-item" for="3">
+                            <img src="../Img/imagenes/Slider3.jpg">
+                        </label>
 
-                <div class="swiper mySwiper-1">
-                    <div class="swiper-wrapper">
-
-                          <div class="swiper-slide">
-                               <div class="slider">
-                                    <div class="slider-txt">
-                                        <h1>Hamburguesa</h1>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                             Sapiente aliquid error dolore ad aliquam! Facere itaque 
-                                             perferendis excepturi eos. Assumenda eum vitae unde 
-                                             laboriosam, saepe in culpa aut molestias reiciendis.
-                                        </p>
-                                        <div class="botones">
-                                            <a href="#" class="btn-1">Comprar</a>
-                                            <a href="#" class="btn-1">Menu</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="slider-img">
-                                        <img src="Img/images/slider1.png" alt="">
-                                    </div>
-                               </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="slider">
-                                 <div class="slider-txt">
-                                     <h1>Hamburguesa</h1>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                          Sapiente aliquid error dolore ad aliquam! Facere itaque 
-                                          perferendis excepturi eos. Assumenda eum vitae unde 
-                                          laboriosam, saepe in culpa aut molestias reiciendis.
-                                     </p>
-                                     <div class="botones">
-                                         <a href="#" class="btn-1">Comprar</a>
-                                         <a href="#" class="btn-1">Menu</a>
-                                     </div>
-
-                                 </div>
-                                 <div class="slider-img">
-                                     <img src="Img/images/slider2.png" alt="">
-                                 </div>
-                            </div>
-                       </div>
-                       <div class="swiper-slide">
-                        <div class="slider">
-                             <div class="slider-txt">
-                                 <h1>Hamburguesa</h1>
-                                 <p>
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                      Sapiente aliquid error dolore ad aliquam! Facere itaque 
-                                      perferendis excepturi eos. Assumenda eum vitae unde 
-                                      laboriosam, saepe in culpa aut molestias reiciendis.
-                                 </p>
-                                 <div class="botones">
-                                     <a href="#" class="btn-1">Comprar</a>
-                                     <a href="#" class="btn-1">Menu</a>
-                                 </div>
-
-                             </div>
-                             <div class="slider-img">
-                                 <img src="Img/images/slider3.png" alt="">
-                             </div>
-                        </div>
-                        </div>
-
-
-                          
                     </div>
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-
+                    <br>
+                    <br>
 
                 </div>
-             </div>
-    </header>
+                <br>
+                <br>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
 
+        </section>
 
-    <main class="products">
-        <div class="tabs container">
+        <main class="services">
 
-            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
-            <label for="tab1">Hamburguesa</label>
-            <div class="tab">
-                <div class="swiper mySwiper-2" id="swiper1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="Img/images/food1.png" alt="">                                 
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>                           
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food2.png" alt="">         
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>      
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food3.png" alt="">
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>                           
-                            </div>
-                        </div>
+            <div class="services-content container">
+                <h2>Nuestros servicios</h2>
+
+                <div class="services-group">
+
+                    <div class="services-1">
+                        <img src="../Img/imagenes/Wifi.png" alt="">
+                        <h3>Wifi gratis</h3>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="services-1">
+                        <img src="../Img/imagenes/Espacio.png" alt="">
+                        <h3>Espacios para estudio/trabajo</h3>
+                    </div>
+                    <div class="services-1">
+                        <img src="../Img/imagenes/Billetera.png" alt="">
+                        <h3>Sistemas de pago</h3>
+                    </div>
+                </div>
+                <p>
+                    En Lora Café, nos enfocamos en brindarte una experiencia única, personalizada y cómoda, pensada para
+                    que disfrutes al máximo cada visita.
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+        </main>
+
+
+        <section class="general">
+
+            <div class="general-1">
+                <h2>PROMOCION N°1 </h2>
+                <p>
+                    Todos los LUNES del mes de octubre, pide la promo de nuestro 2do FRESA FRAPPÉ en tamaño mediano a
+                    sólo S/3 soles🧋
+                    </br>
+                    🕣 Desde medio día a 5pm </br>
+
+                    ¡Los esperamos! 😊
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+            <div class="general-2"></div>
+        </section>
+        <section class="general">
+
+            <div class="general-3"></div>
+
+            <div class="general-1">
+                <h2>PROMOCION N°2</h2>
+                <p>
+                    Todos los JUEVES del mes de octubre, pide la promo de nuestro 2do CHOCOLATE CALIENTE en tamaño
+                    pequeño a sólo S/3 soles🧋
+                    </br>
+                    🕣 Desde las 5pm hasta las 9pm </br>
+
+                    ¡Los esperamos! 😊
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+        </section>
+
+        <section class="blog container">
+            <h2>HORARIO</h2>
+            <p>Ven a disfrutar con nosotros a partir del siguiente horario:</p>
+
+            <div class="blog-content">
+                <div class="blog-1">
+                    <img src="../Img/imagenes/restaruante_afuera.png" alt="">
+                    <h3>Nuestro Horario:</h3>
+                    <p>
+                        Lunes 8:00 a. m. - 9:45 p. m.<br>
+                        Martes 8:00 a. m. - 9:45 p. m.<br>
+                        Miércoles 8:00 a. m. - 9:45 p. m.<br>
+                        Jueves 8:00 a. m. - 9:45 p. m.<br>
+                        Viernes 8:00 a. m. - 9:45 p. m.<br>
+                        Sábado 8:00 a. m. - 9:45 p. m.<br>
+                        Domingo 8:00 a. m. - 2:15 p. m.
+                    </p>
                 </div>
             </div>
-        
-            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
-            <label for="tab2">Burritos</label>
-            <div class="tab">
-                <div class="swiper mySwiper-2" id="swiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food4.png" alt="">                                 
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>                           
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food5.png" alt="">         
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>      
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food6.png" alt="">
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>                           
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-
-            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
-            <label for="tab3">Variedad</label>
-            <div class="tab">
-                <div class="swiper mySwiper-3" id="swiper3">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food7.png" alt="">                                 
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>                           
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food8.png" alt="">         
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>      
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                              <div class="product-img">
-                                   <h4>Nuevo</h4>
-                                   <img src="images/food9.png" alt="">
-                              </div>
-                              <div class="product-txt">
-                                  <h4>Producto</h4>
-                                  <p>calidad Premiun</p>
-                                  <span class="price">$80.00</span>
-                              </div>                           
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <section class="info container">
-
-        <div class="info-img">
-            <img src="images/info.png" alt="">
-
-        </div>
-
-        <div class="info-txt">
-            <h2>Informacion:</h2>
-            <p>
-                 
-                Voluptate perferendis fuga inventore dignissimos animi, 
-                id est facilis, natus illo, perspiciatis tenetur autem rerum 
-                assumenda excepturi voluptatem illum dolorum. Sequi, doloremque.
-            </p>
-            <a href="#" class="btn-2">Mas informacion</a>
-        </div>
-        
-    </section>
-
-    <section class="horario">
-        <div class="horario-info container"></div>
-        
-        <h2>Horario</h2>
-        <div class="horario-txt">
-            <div class="txt">
-                <h4>Direccion</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                </p>
-                <p>
-                     consectetur adipisicing elit.
-                </p>
-            </div>
-            <div class="txt">
-                <h4>Horario</h4>
-                <p>
-                    Luner a Viernes :9 am - 8 pm 
-                </p>
-                <p>
-                     Sabado a Domingo  : 11 am - 7 pm
-                </p>
-            </div>
-            <div class="txt">
-                <h4>Telefono</h4>
-                <p>
-                    967433742
-                </p>
-                <p>
-                     975325551
-                </p>
-            </div>
-            <div class="txt">
-                <h4>Redes Sociales</h4>
-
-            </div>
-        </div>
-    </section>
+            <a href="#" class="btn-1">Información</a>
+        </section>
 
 
 
-    <section class="">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5072075021576!2d-75.75263112531394!3d-14.047199786376188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e36ff0bab47f%3A0x89eb2f068f7726a8!2sRestaurant%20D&#39;acari!5e0!3m2!1ses-419!2spe!4v1729533139227!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-    </section>
+        <footer style="background-color: #ac7e58; color: white; text-align: center; padding: 10px 0;">
+            <p>&copy; 2024 Lora Café. Todos los derechos reservados.</p>
+            <p>Síguenos en redes sociales: </p>
+            <a href="https://www.facebook.com/share/ctLabiRs8VnH2tCH/?mibextid=qi20mg">
+                <ion-icon name="logo-facebook"
+                    style="color: rgb(255, 255, 255); font-size: 24px; margin-right: 15px;"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/loracafe.ica?igsh=bGkwN3locXhpMWZw">
+                <ion-icon name="logo-instagram"
+                    style="color: rgb(255, 255, 255);font-size: 24px; margin-right: 15px;"></ion-icon>
+            </a>
+            <a
+                href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2Foomk5g&e=AT10FzF9cbchi_VQ_RF7ArFOdT0GMtS-p4ovBUU8RL1OLmGIzX-8jLJnzfEH_z3D9GC9MBHTIEbFcJWP8pqWQrphw4wdhbWM_XxHnw">
+                <ion-icon name="logo-whatsapp"
+                    style="color: rgb(255, 255, 255);font-size: 24px; margin-right: 15px;"></ion-icon>
+            </a>
 
-    <footer class="footer container">
+        </footer>
+    </body>
 
-        <img class="logo-2" src="images/logo.svg" alt="">
-        <div class="links">
-            <h4>Lorem</h4>
-            <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-
-
-            </ul>
-
-        </div>
-        <div class="links">
-            <h4>Lorem</h4>
-            <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-
-
-            </ul>
-
-        </div>
-        <div class="links">
-            <h4>Lorem</h4>
-            <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-
-
-            </ul>
-
-        </div>
-        <div class="links">
-            <h4>Lorem</h4>
-            <div class="socials">
-                <a href="#">
-                    <div class="social">
-                        <img src="images/s1.svg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social">
-                        <img src="images/s2.svg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social">
-                        <img src="images/s3.svg" alt="">
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </footer>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
 </html>
