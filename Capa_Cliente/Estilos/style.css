@@ -111,7 +111,7 @@
   }
 
   .menu-icono {
-    width: 25px;
+    width: 40px;
   }
 
   .menu label {
@@ -215,7 +215,9 @@
     border-bottom: 2px solid #db241b;
     color: #ffffff;
   }
-
+  .tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+  }
   .product{
     display: flex;
     align-items: center;
@@ -390,11 +392,11 @@
       display: none;
     }
     .logo-1{
-      width: 100px;
+      width: 120px;
     }
 
     .logo-2 {
-      width: 0;
+      width: 0px;
 
     }
     .menu label{
