@@ -12,6 +12,20 @@ var swiper = new Swiper(".mySwiper-1",{
 
     }
 })
+var swiper = new Swiper(".mySwiper-3",{
+    slidesPerView:3,
+    spaceBetween: 30,
+    loop:true,
+    pagination: {
+        el:".swiper-pagination",
+        clickable: true,
+    },
+    navigation : {
+        nextE1:".swiper-button-next",
+        prevE1:".swiper-button-prev"
+
+    }
+})
 
 var swiper = new Swiper(".mySwiper-2",{
     slidesPerView:3,
