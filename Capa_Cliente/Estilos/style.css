@@ -332,9 +332,10 @@
     margin-bottom: 50px;
   }
 
-  .horario.txt {
+  .horario-txt {
     display: flex;
     justify-content: space-between;
+    
 
   }
 
@@ -358,4 +359,22 @@
 
   .map{
     filter: grayscale(100%) invert(92%) contrast(93%);
+  }
+
+  .footer{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .link h4{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .link ul li a{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
   }
