@@ -132,7 +132,7 @@ body {
     margin-top: 100px;
   }
   .abajo{
-    margin-top: 100px;
+    margin-top: 170px;
   }
 
   @media(max-width: 1350px){
@@ -369,7 +369,7 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 15px;
     margin-right: 20px;
 }
 .mision:last-child {
@@ -381,9 +381,9 @@ body {
     margin-bottom: 10px;
 }
 .mision p, .vision p {
-    font-size: 17px;
+    font-size: 18px;
     color: #666;
-    line-height: 1.5;
+    line-height: 2;
 }
 .mision-vision-container img {
     width: 100%;
