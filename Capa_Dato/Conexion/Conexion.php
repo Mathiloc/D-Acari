@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hola Mundo</h1>
-</body>
-</html>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "bd_dacari";
+
+// Crear la conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+echo "Conexión exitosa";
+?>
