@@ -12,12 +12,12 @@ header.innerHTML = `<nav>
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
+            <li><a href="../../Capa_Cliente/Vista/Index.html">Inicio</a></li>
+            <li><a href="../../Capa_Cliente/Vista/sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="../../Capa_Cliente/Vista/Menu.html">Productos</a></li>
             <li><a href="#">Reservas</a></li>
-            <li><a href="#">Club</a></li>
-            <li><a href="#">Registrate</a></li>
+            <li><a href="../../Capa_Cliente/Vista/PLatillos.html">Club</a></li>
+            <li><a href="/../Capa_Cliente/Vista/login2.html">Registrate</a></li>
             <li><button class="login-button" href="#">Login</button></li>
             <li><button class="join-button" href="#">car</button></li>
         </ul>
