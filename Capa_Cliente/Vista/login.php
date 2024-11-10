@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <li><a href="#"><i class="fas fa-calendar-alt"></i> Reservas</a></li>
                             <li><a href="Platillos.html"><i class="fas fa-user-friends"></i> Club</a></li>
                             <?php if (isset($_SESSION['nombre_cliente'])): ?>
-                                <li><span>Bienvenido, <?php echo $_SESSION['nombre_cliente']; ?></span></li>
+                                <li><span style="color: white;">Bienvenido, <?php echo $_SESSION['nombre_cliente']; ?></span></li>
                                 <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
                             <?php else: ?>
                                 <li><a href="login2.html"><i class="fa-sharp fa-solid fa-user-plus"></i> Registrate</a></li>

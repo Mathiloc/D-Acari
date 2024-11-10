@@ -21,7 +21,7 @@
                 <nav class="navbar">
                     <div class="menu-1">
                         <ul>
-                            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                            <li><a href="index.phpl"><i class="fas fa-home"></i> Inicio</a></li>
                             <li><a href="sobrenosotros.html"><i class="fas fa-users"></i> Sobre Nosotros</a></li>
                             <li><a href="Menu.html"> <i  class="fas fa-box"></i> Productos</a></li>
                             <li><a href="#"><i class="fas fa-calendar-alt"></i> Reservas</a></li>
