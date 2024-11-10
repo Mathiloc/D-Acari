@@ -37,8 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-     
-    <header >
+    <?php include '../header/header.php'; ?>
+    <!-- <header >
              <div class="menu container">
                 <img  class="logo-1" src="../Img/imagenes/logoredondo.png" alt="">
                 <input type="checkbox" id="menu">
@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </nav>
              </div>
 
-    </header>
+    </header> -->
 
     <section>
         <div class="imgBx">
@@ -130,6 +130,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </ul>
             </div>
         </div>
+
+        
     </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-     
-    <header >
+<?php include '../header/header.php'; ?>
+    <!-- <header >
              <div class="menu container">
                 <img  class="logo-1" src="../Img/imagenes/logoredondo.png" alt="">
                 <input type="checkbox" id="menu">
@@ -66,7 +66,7 @@
                     </div>
                 </nav>
              </div>
-
+ -->
              <div class="header-content container">
 
                 <div class="swiper mySwiper-1">
@@ -147,7 +147,7 @@
 
                 </div>
              </div>
-    </header>
+    </header>  
 
 
     <main class="products">
