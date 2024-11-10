@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif !important;
     background-color: #000000;
+    color: #ffffff;
 }
 section{
     width: 100%;
@@ -13,10 +14,11 @@ section{
     background: #0000;
     background-color: #000000;
 }
+
 .club h2 {
-    color: #e27107;
-    font-size: 50px;
-    padding: 20px 0;
+    color: #ffffff;
+    font-size: 70px;
+    padding: 120px 0;
     text-align: center;
     font-family: fantasy;
 }
@@ -200,6 +202,17 @@ section{
 
 
 @media (max-width:800px) {
+    nav{
+        position: fixed;
+        z-index: 3;
+        background-color: #e27107; /* Asegúrate de que el color de fondo esté definido */
+    }
+    .nav-links {
+        background-color: #e27107; /* Asegúrate de que el color de fondo también esté definido aquí */
+    }
+    .nav-links li a {
+        color: #f2f5f7; /* Asegúrate de que los enlaces también tengan el color correcto */
+    }
     
 
 

@@ -12,10 +12,12 @@
     background-color: #080202;
     font-family: "Poppins", sans-serif;
   }
+  
 
   .cotainer {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 100px;
   }
 
   .swiper-button-prev::after {
@@ -41,8 +43,8 @@
     background-color: #db241b;
   }
   .menu{
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     display: flex;
@@ -120,7 +122,7 @@
   }
 
   .header-content {
-    margin-top: 200px;
+    margin-top: 220px;
     padding-bottom: 50px;
   }
 

@@ -12,6 +12,16 @@
     background-color: #080202;
     font-family: "Poppins", sans-serif;
   }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* o cualquier color que desees */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    padding: 10px 0; /* Ajusta el espacio en el header */
+  }
+
 
   .cotainer {
     max-width: 1200px;
