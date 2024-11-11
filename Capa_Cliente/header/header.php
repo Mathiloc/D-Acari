@@ -44,7 +44,7 @@ echo '
             <li><a href="#">Reservas</a></li>
             <li><a href="../../Capa_Cliente/Vista/PLatillos.php">Club</a></li>
             <li><a href="../../Capa_Cliente/Vista/Login.php">Registrate</a></li>
-            <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="login-button" href="#">Raul Mathias</button></li>
             <li><button class="join-button" href="#">car</button></li>
         </ul>
     </nav>
