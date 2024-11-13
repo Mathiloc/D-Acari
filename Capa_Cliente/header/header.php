@@ -18,18 +18,15 @@ session_start();
             <li><a href="../../Capa_Cliente/Vista/Menu.php">Productos</a></li>
             <li><a href="#">Reservas</a></li>
             <li><a href="../../Capa_Cliente/Vista/PLatillos.php">Club</a></li>
-            <?php
-        
-        if (isset($_SESSION['usuario'])) {
-            // Si el usuario está logueado, mostrar su nombre
-            echo "<li>Bienvenido, " . $_SESSION['usuario']['nombre_cliente'] . "</li>";
-            echo '<li><a href="logout.php">Cerrar sesión</a></li>';
-        } else {
-            // Si el usuario no está logueado, mostrar el enlace de login
-            echo '<li><a href="../../Capa_Cliente/Vista/Login.php">Registrate</a></li>';
-            echo '<li><button class="login-button" href="#">Login</button></li>';
-        }
-        ?>
+            <?php if (isset($_SESSION['nombre_cliente'])): ?>
+            <!-- Si el usuario está logueado, mostrar su nombre y opción para cerrar sesión -->
+            <li>Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre_cliente']); ?></li>
+            <li><a href="../../Capa_Cliente/Vista/Logout.php">Cerrar sesión</a></li>
+        <?php else: ?>
+            <!-- Si el usuario no está logueado, mostrar enlaces de registro e inicio de sesión -->
+            <li><a href="../../Capa_Cliente/Vista/Login.php">Regístrate</a></li>
+            <li><a href="../../Capa_Cliente/Vista/Login.php" class="login-button">Login</a></li>
+        <?php endif; ?>
             <li><button class="join-button" href="#">car</button></li>
         </ul>
     </nav>

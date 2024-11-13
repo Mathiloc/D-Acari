@@ -1,14 +1,16 @@
-<?php
+<<?php
 session_start();
-include("../../Capa_Dato/Conexion/conexion.php");
+require '../../Capa_Dato/Conexion/conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $documento_cliente = $_POST['documento_cliente'];
     $contrasena_cliente = $_POST['contraseña_cliente'];
 
-    // Consulta SQL para validar usuario y obtener el nombre
-    $sql = "SELECT Nombre_Cliente FROM cliente WHERE Documento_Cliente = '$documento_cliente' AND Contraseña_Cliente = '$contrasena_cliente'";
-    $result = $conn->query($sql);
+    // Consulta SQL utilizando consultas preparadas para evitar inyecciones SQL
+    $stmt = $conn->prepare("SELECT Nombre_Cliente FROM cliente WHERE Documento_Cliente = ? AND Contraseña_Cliente = ?");
+    $stmt->bind_param("ss", $documento_cliente, $contrasena_cliente);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
         // Si el usuario existe, guarda su nombre en la sesión
@@ -22,6 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<script>alert('Usuario o contraseña incorrectos');</script>";
     }
+
+    // Cerrar la declaración
+    $stmt->close();
 }
 ?>
 <!DOCTYPE html>
@@ -39,58 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <?php include '../header/header.php'; ?>
-    <!-- <header >
-             <div class="menu container">
-                <img  class="logo-1" src="../Img/imagenes/logoredondo.png" alt="">
-                <input type="checkbox" id="menu">
-                <label for="menu">
-                    <img src="../Img/images/menu.png" class="menu-icono" alt="">
-                </label>
-                <nav class="navbar">
-                    <div class="menu-1">
-                        <ul>
-                            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                            <li><a href="sobrenosotros.html"><i class="fas fa-users"></i> Sobre Nosotros</a></li>
-                            <li><a href="Menu.html"> <i  class="fas fa-box"></i> Productos</a></li>
-                            <li><a href="#"><i class="fas fa-calendar-alt"></i> Reservas</a></li>
-                            <li><a href="Platillos.html"><i class="fas fa-user-friends"></i> Club</a></li>
-                            <?php if (isset($_SESSION['nombre_cliente'])): ?>
-                                <li><span style="color: white;">Bienvenido, <?php echo $_SESSION['nombre_cliente']; ?></span></li>
-                                <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
-                            <?php else: ?>
-                                <li><a href="login2.html"><i class="fa-sharp fa-solid fa-user-plus"></i> Registrate</a></li>
-                            <?php endif; ?>
-                                </ul>
-                    </div>
-                    <img class="logo-2" src="../Img/imagenes/logoredondo.png" alt="">
-                    <div class="menu-2">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-clock"></i> Horario</a></li>
-                          
-                        </ul>
-                     
-                        <div class="socials">
-                            <a href="#">
-                                <div class="social">
-                                    <img src="../Img/images/s1.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="social">
-                                    <img src="../Img/images/s2.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="social">
-                                    <img src="../Img/images/s3.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-             </div>
 
-    </header> -->
 
     <section>
         <div class="imgBx">

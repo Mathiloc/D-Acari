@@ -11,62 +11,7 @@
 </head>
 <body>
 <?php include '../header/header.php'; ?>
-    <!-- <header >
-             <div class="menu container">
-                <img  class="logo-1" src="../Img/imagenes/logoredondo.png" alt="">
-                <input type="checkbox" id="menu">
-                <label for="menu">
-                    <img src="../Img/images/menu.png" class="menu-icono" alt="">
-                </label>
-                <nav class="navbar">
-                    <div class="menu-1">
-                        <ul>
-                            <li><a href="index.phpl"><i class="fas fa-home"></i> Inicio</a></li>
-                            <li><a href="sobrenosotros.html"><i class="fas fa-users"></i> Sobre Nosotros</a></li>
-                            <li><a href="Menu.html"> <i  class="fas fa-box"></i> Productos</a></li>
-                            <li><a href="#"><i class="fas fa-calendar-alt"></i> Reservas</a></li>
-                            <li><a href="Club.html"><i class="fas fa-user-friends"></i> Club</a></li>
-                            <?php
-                    
-                    if (isset($_SESSION['nombre_usuario'])) {
-                        // Si el usuario está logueado, muestra su nombre y el enlace de "Cerrar Sesión"
-                        echo '<li><a href="perfil.html"><i class="fas fa-user"></i> ' . htmlspecialchars($_SESSION['nombre_usuario']) . '</a></li>';
-                        echo '<li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>';
-                    } else {
-                        // Si el usuario no está logueado, muestra el enlace "Regístrate"
-                        echo '<li><a href="login.php"><i class="fa-sharp fa-solid fa-user-plus"></i> Regístrate</a></li>';
-                    }
-                    ?>
-                        </ul>
-                    </div>
-                    <img class="logo-2" src="../Img/imagenes/logoredondo.png" alt="">
-                    <div class="menu-2">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-clock"></i> Horario</a></li>
-                          
-                        </ul>
-                     
-                        <div class="socials">
-                            <a href="https://www.facebook.com/restaurantdacari.ica">
-                                 <div class="social">
-                                    <img src="../Img/images/s1.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="social">
-                                    <img src="../Img/images/s2.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="https://www.instagram.com/d__acari/?hl=es">
-                                <div class="social">
-                                    <img src="../Img/images/s3.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-             </div>
- -->
+    
              <div class="header-content container">
 
                 <div class="swiper mySwiper-1">
