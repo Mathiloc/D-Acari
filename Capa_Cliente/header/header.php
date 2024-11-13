@@ -17,7 +17,7 @@ session_start();
             <li><a href="../../Capa_Cliente/Vista/sobrenosotros.php">Sobre Nosotros</a></li>
             <li><a href="../../Capa_Cliente/Vista/Menu.php">Productos</a></li>
             <li><a href="#">Reservas</a></li>
-            <li><a href="../../Capa_Cliente/Vista/PLatillos.php">Club</a></li>
+            <li><a href="../../Capa_Cliente/Vista/Club.php">Club</a></li>
             <?php if (isset($_SESSION['nombre_cliente'])): ?>
             <!-- Si el usuario está logueado, mostrar su nombre y opción para cerrar sesión -->
             <li>Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre_cliente']); ?></li>
