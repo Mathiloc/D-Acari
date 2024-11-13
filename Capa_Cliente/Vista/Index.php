@@ -27,7 +27,7 @@
                             <li><a href="#"><i class="fas fa-calendar-alt"></i> Reservas</a></li>
                             <li><a href="Club.html"><i class="fas fa-user-friends"></i> Club</a></li>
                             <?php
-                    session_start();
+                    
                     if (isset($_SESSION['nombre_usuario'])) {
                         // Si el usuario está logueado, muestra su nombre y el enlace de "Cerrar Sesión"
                         echo '<li><a href="perfil.html"><i class="fas fa-user"></i> ' . htmlspecialchars($_SESSION['nombre_usuario']) . '</a></li>';
