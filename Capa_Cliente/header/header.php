@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
     <nav>
         <link rel="stylesheet" href="../Estilos/header.css">
@@ -25,7 +27,7 @@ session_start();
         <?php else: ?>
             <!-- Si el usuario no está logueado, mostrar enlaces de registro e inicio de sesión -->
             <li><a href="../../Capa_Cliente/Vista/Login.php">Regístrate</a></li>
-            <li><a href="../../Capa_Cliente/Vista/Login.php" class="login-button">Login</a></li>
+            <li class="fa-solid fa-user"><a href="../../Capa_Cliente/Vista/Login.php" class="join-button">Usuario</a></li>
         <?php endif; ?>
             <li><button class="join-button" href="#">car</button></li>
         </ul>

@@ -1,294 +1,530 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Platillos</title>
-    <link rel="stylesheet" href="../Estilos/Menu.css">
-    <link rel="icon" href="../Img/imagenes/logoredondo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu D'Acari</title>
+  <script src="https://kit.fontawesome.com/81581fb069.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../Estilos/Menu.css" />
 </head>
-<body>
-    <div class="container">
-        <h2>Platillos D'Acari</h2>
-    </div>
-    <main>
-        <header>
-            <ul class="menu-categories">
-                <li data-filter="Todos" class="active"><a href="#">Todos</a></li>
-                <li data-filter="Menu"><a href="#">Menú</a></li>
-                <li data-filter="PlatosCarta"><a href="#">Platos a la carta</a></li>
-                <li data-filter="Marinos"><a href="#">Marinos</a></li>
-                <li data-filter="Bebidas"><a href="#">Bebidas</a></li>
-            </ul>
-        </header>
-        <!--Menu-->
-        <div class="menu-items">
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/sopa-seca.jpg" alt="Sopa seca con carapulcra">
-                <h3>Sopa seca con carapulcra</h3>
-                <p>Plato icónico de Ica que combina fideos sazonados con un guiso de papas secas y carne, aderezado con maní y ajíes.</p>
-                <p>PRECIO: S/ 13.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/pollo-cerveza.jpg" alt="Pollo a la cerveza">
-                <h3>Pollo a la cerveza</h3>
-                <p>Es un guiso en el que el pollo se cocina con cerveza, lo que le da un sabor suave y aromático.</p>
-                <p>PRECIO: S/ 13.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/higado-plancha.jpg" alt="Higado a la plancha">
-                <h3>Hígado a la plancha</h3>
-                <p>Hígado cocinado en una plancha con aceite, sazonado con sal, pimienta y ajo. Acompañado con papas, ensalada o arroz.</p>
-                <p>PRECIO: S/ 16.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/spaghetti-bolognesa.jpg" alt="Spaghetti a la bolognesa">
-                <h3>Spaghetti a la bolognesa</h3>
-                <p>Servidos con una salsa a base de carne molida, tomate, cebolla, zanahoria, ajo y vino.</p>
-                <p>PRECIO: S/ 16.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/parrilla-chancho.jpeg" alt="Parrilla de chancho">
-                <h3>Parrilla de chancho</h3>
-                <p>Piezas de chancho a la parrilla, sazonadas con especias. Asado hasta que esté dorado y jugoso, servido con guarniciones como papas, choclo y salsas criollas.</p>
-                <p>PRECIO: S/ 16.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/chaufa.jpg" alt="Sopa seca con carapulcra">
-                <h3>Chaufa de pollo</h3>
-                <p>Arroz frito mezclado con trozos de pollo, huevo, cebolla china y salsa de soya.</p>
-                <p>PRECIO: S/ 16.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/Alitas-bbq.jpg" alt="Alitas a la BBQ">
-                <h3>Alitas a la BBQ</h3>
-                <p>Alitas de pollo cocinadas y cubiertas con salsa barbacoa, que les da un sabor dulce y ahumado.</p>
-                <p>PRECIO: S/ 16.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/macarrones.jpg" alt="Macarrones al pesto con churrasco">
-                <h3>Macarrones al pesto con churrasco</h3>
-                <p>Macarrones bañados en salsa de albahaca, ajo, queso y nueces o piñones, con un jugoso churrasco a la parrilla.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/parrila-res.jpg" alt="Parrilla de res con papas fritas">
-                <h3>Parrilla de res con papas fritas</h3>
-                <p>Carne de res asados a la parrilla, servidos con papas fritas crujientes. Un plato sabroso y sustancioso.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/pollo-saltado.jpg" alt="Pollo saltado">
-                <h3>Pollo saltado</h3>
-                <p>Trozos de pollo salteados con cebolla, tomate y ají, todo cocinado a fuego alto. Servido con arroz y papas fritas.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/chaufa-bbq.jpg" alt="Chaufa con alitas a la BBQ">
-                <h3>Chaufa con alitas a la BBQ</h3>
-                <p>Arroz frito con trozos de pollo, cebolla china y salsa de soya, acompañado de alitas de pollo glaseadas con una salsa barbacoa dulce y ahumada.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/tallarin-saltado.jpg" alt="Tallarin saltado de pollo">
-                <h3>Tallarin saltado de pollo</h3>
-                <p>Fideos de tallarín salteados con trozos de pollo, cebolla, tomate y ají, todo cocinado a fuego alto.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/pollo-plancha.jpg" alt="Filete de pollo a la plancha">
-                <h3>Filete de pollo a la plancha</h3>
-                <p>Filete de pollo cocido a la plancha, sazonado con sal y especias, acompañado de crujientes papas fritas.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/Costillas con yuca.jpg" alt="Costillar de res con yucas">
-                <h3>Costillar de res con yucas</h3>
-                <p>Se cocina el costillar de res a la parrilla o al horno, logrando una carne tierna y jugosa. Acompañado de yucas fritas o sancochadas.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Menu">
-                <img src="../Img/img/churrasco-plancha.jpeg" alt="Churrasco a la plancha">
-                <h3>Churrasco a la plancha</h3>
-                <p>Res cocido en una plancha caliente. Sazonado con sal y pimienta, logrando una carne jugosa y dorada por fuera.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <!--Platos a la carta-->
-            <div class="item" data-category="PlatosCarta">
-                <img src="../Img/img/lomo-saltado.jpg" alt="Lomo saltado">
-                <h3>Lomo saltado</h3>
-                <p>Combina tiras de carne de res salteadas a fuego alto con cebolla, tomate y ají. Mezclado con papas fritas y acompañado de arroz.</p>
-                <p>PRECIO: S/ 25.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="PlatosCarta">
-                <img src="../Img/img/Milanesa-pollo.jpg" alt="Milanesa de pollo">
-                <h3>Milanesa de pollo</h3>
-                <p>Filete de pollo empanizado con pan rallado y frito hasta quedar dorado y crujiente. Acompañado con papas fritas, ensalada o arroz.</p>
-                <p>PRECIO: S/ 24.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="PlatosCarta">
-                <img src="../Img/img/fetuccini-huancaina.jpg" alt="Fetuccini a la huancaina con lomo">
-                <h3>Fetuccini a la huancaina con lomo</h3>
-                <p>Plato que combina fetuccini cubiertos con una cremosa salsa huancaína, hecha a base de ají amarillo, queso fresco y leche, acompañado de tiras de lomo de res jugoso.</p>
-                <p>PRECIO: S/ 30.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="PlatosCarta">
-                <img src="../Img/img/tallarines-verdes.jpg" alt="Tallarin verde con chuleta">
-                <h3>Tallarin verde con chuleta</h3>
-                <p>Fideos bañados en salsa de albahaca y espinaca, acompañada de una chuleta de cerdo a la plancha.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="PlatosCarta">
-                <img src="../Img/img/tallarin-saltado-res.jpg" alt="Tallarin saltado de res">
-                <h3>Tallarin saltado de res</h3>
-                <p>Tallarín salteados a fuego alto con tiras de carne de res, cebolla, tomate y ají, todo aderezado con salsa de soya.</p>
-                <p>PRECIO: S/ 24.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="PlatosCarta">
-                <img src="../Img/img/lomo_saltado_a_lo_pobre.jpg" alt="Lomo saltado a lo pobre">
-                <h3>Lomo saltado a lo pobre</h3>
-                <p>Combina tiras de carne de res salteadas con cebolla, tomate y ají, acompañado de papas fritas, arroz, plátano frito y un huevo frito.</p>
-                <p>PRECIO: S/ 28.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="PlatosCarta">
-                <img src="../Img/img/tallarin-verde-bistec.png" alt="Tallarines verdes con bisteck apanado">
-                <h3>Tallarines verdes con bisteck apanado</h3>
-                <p>Pasta bañada en una salsa cremosa de albahaca y espinaca, con un bisteck empanizado y frito hasta quedar crujiente.</p>
-                <p>PRECIO: S/ 30.00</p>
-                <button>Comprar</button>
-            </div>
-            <!--Marinos-->
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/ceviche_carretillero.jpg" alt="Ceviche carretillero">
-                <h3>Ceviche carretillero</h3>
-                <p>Pescado fresco marinado en jugo de limón, ají, cebolla y cilantro. Acompañado de cancha, yuca o camote, y chicharrón de pescado.</p>
-                <p>PRECIO: S/ 18.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/trucha-frita.jpg" alt="Trucha frita con yucas doradas">
-                <h3>Trucha frita con yucas doradas</h3>
-                <p>Trucha fresca frita hasta quedar crujiente, acompañada de yucas doradas y crujientes. Acompañado con ensalada o arroz.</p>
-                <p>PRECIO: S/ 25.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/lenguado.jpg" alt="Lenguado frito al plato">
-                <h3>Lenguado frito al plato</h3>
-                <p>Filete de lenguado frito hasta dorarse, sazonado con sal y especias. Acompañado con papas fritas, arroz o ensalada.</p>
-                <p>PRECIO: S/ 30.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/chupe-camarones.jpg" alt="Chupe de camarones">
-                <h3>Chupe de camarones</h3>
-                <p>Sopa cremosa y sustanciosa elaborada con camarones frescos, papas, choclo, queso y especias, todo cocido en un caldo sabroso.</p>
-                <p>PRECIO: S/ 35.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/chicharron-pescado.jpg" alt="Chicharron de pescado">
-                <h3>Chicharron de pescado</h3>
-                <p>Trozos de pescado rebozados y fritos hasta que quedan dorados y crujientes. Acompañado con yuca o papas fritas.</p>
-                <p>PRECIO: S/ 16.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/arroz-chaufa-de-mariscos.webp" alt="Chaufa marino">
-                <h3>Chaufa marino</h3>
-                <p>Arroz frito con mariscos como camarones, calamares y pescado, junto con cebolla china, huevo y salsa de soya.</p>
-                <p>PRECIO: S/ 16.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/ceviche-mixto.jpg" alt="Ceviche mixto">
-                <h3>Ceviche mixto</h3>
-                <p>Diferentes tipos de mariscos, como pescado, calamares, y camarones, marinados en jugo de limón, junto con cebolla, ají y cilantro.</p>
-                <p>PRECIO: S/ 25.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/ceviche-pescado.jpg" alt="Ceviche de pescado">
-                <h3>Ceviche de pescado</h3>
-                <p>Pescado fresco (como corvina o lenguado) marinado en jugo de limón, junto con cebolla roja, ají, cilantro y sal.</p>
-                <p>PRECIO: S/ 20.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/duo(ceviche-chicharron).png" alt="Duo (Ceviche + Chicharron)">
-                <h3>Duo (Ceviche + Chicharron)</h3>
-                <p>Una combinación perfecta que une la frescura del ceviche con la textura crujiente del chicharrón.</p>
-                <p>PRECIO: S/ 25.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/trio-marino.jpg" alt="Trio marino">
-                <h3>Trio marino</h3>
-                <p>Una irresistible combinación de ceviche fresco, crujiente chicharron de pescado y arroz de mariscos.</p>
-                <p>PRECIO: S/ 35.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/arroz-mariscos.jpg" alt="Arroz con mariscos">
-                <h3>Arroz con mariscos</h3>
-                <p>Arroz sazonado y salteado con una variedad de mariscos frescos, como camarones, calamares y conchas, acompañado de un toque de aji y especias.</p>
-                <p>PRECIO: S/ 28.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item" data-category="Marinos">
-                <img src="../Img/img/ceviche-camarones.jpg" alt="Ceviche de camarones">
-                <h3>Ceviche de camarones</h3>
-                <p>Frescos camarones marinados en jugo de limón mezclados con cebolla, aji y cilantro.</p>
-                <p>PRECIO: S/ 60.00</p>
-                <button>Comprar</button>
-            </div>
-            <!--Bebidas-->
-            <div class="item item-bebida" data-category="Bebidas">
-                <img src="../Img/img/pisco-sour.jpg" alt="Pisco Sour">
-                <h3>Pisco Sour</h3>
-                <p>Disfruta de nuestro clásico Pisco sour , preparado con pisco, jugo de limón, jarabe de goma y clara de huevo.</p>
-                <p>PRECIO: S/ 25.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item item-bebida" data-category="Bebidas">
-                <img src="../Img/img/vino-perfecto.webp" alt="Vino perfecto amor">
-                <h3>Vino perfecto amor</h3>
-                <p>Dulce y suave, ideal para acompañar momentos especiales. Su sabor afrutado y delicado lo convierte en la elección perfecta para celebrar con un toque de dulzura.</p>
-                <p>PRECIO: S/ 22.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="item item-bebida" data-category="Bebidas">
-                <img src="../Img/img/pisco-quebranta.jpg" alt="Pisco quebranta">
-                <h3>Pisco quebranta</h3>
-                <p>Pisco puro elaborado con uvas quebranta, caracterizado por su sabor suave y afrutado.</p>
-                <p>PRECIO: S/ 25.00</p>
-                <button>Comprar</button>
-            </div>
-            
-        </div>
-    </main>
 
+
+<body>
+  <div class="container">
+    <section class="menu">
+
+      <div class="title">
+        <h2>Menú D'Acari</h2>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn btn-outline-dark btn-item" data-id="Todos">Todos</button>
+        <button class="btn btn-outline-dark btn-item" data-id="Menú">Menú</button>
+        <button class="btn btn-outline-dark btn-item" data-id="Carta">Platos a la carta</button>
+        <button class="btn btn-outline-dark btn-item" data-id="Marinos">Marinos</button>
+        <button class="btn btn-outline-dark btn-item" data-id="Bebidas">Bebidas</button>
+      </div>
+
+      <div class="section-center row">
+        <!--Menu-->
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://t4.ftcdn.net/jpg/05/04/78/29/360_F_504782924_osLGjQmoipSb0uDjcfK0meROIQfMePE5.jpg"
+            alt="Sopa seca con carapulcra" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Sopa seca con carapulcra</h4>
+              <h4 class="price">S/13.00</h4>
+            </div>
+            <div class="menu-text">
+              Plato icónico de Ica que combina fideos sazonados con un guiso de papas secas y carne, aderezado con maní
+              y ajíes.
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://i.ytimg.com/vi/iTv6RTt0K5s/maxresdefault.jpg" alt="Pollo a la cerveza" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Pollo a la cerveza</h4>
+              <h4 class="price">S/13.00</h4>
+            </div>
+            <div class="menu-text">
+              Es un guiso en el que el pollo se cocina con cerveza, lo que le da un sabor suave y aromático.
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://img-global.cpcdn.com/recipes/4fff9b3d4f71b09b/680x482cq70/higado-de-ternera-a-la-plancha-foto-principal.jpg"
+            alt="Higado a la plancha" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Hígado a la plancha</h4>
+              <h4 class="price">S/16.00</h4>
+            </div>
+            <div class="menu-text">Hígado cocinado en una plancha con aceite, sazonado con sal, pimienta y ajo.
+              Acompañado con papas, ensalada o arroz.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://peopleenespanol.com/thmb/6t7A-dem6ZyHI6zXy62cQ-0MBJY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/recetas-4115-spaghetti-boloesa-facil-2000-d4cbc49cc28d4e78bf8266662cc037e1.jpg"
+            alt="Spaghetti a la bolognesa" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Spaghetti a la bolognesa</h4>
+              <h4 class="price">S/16.00</h4>
+            </div>
+            <div class="menu-text">Servidos con una salsa a base de carne molida, tomate, cebolla, zanahoria, ajo y
+              vino.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://ranchera.com.co/wp-content/uploads/2022/07/lomo-de-cerdo-a-la-parilla-1-scaled.jpeg"
+            alt="Parrilla de chancho" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Parrilla de chanchoo</h4>
+              <h4 class="price">S/16.00</h4>
+            </div>
+            <div class="menu-text">Piezas de chancho a la parrilla, sazonadas con especias. Asado hasta que esté dorado
+              y jugoso, servido con guarniciones como papas, choclo y salsas criollas.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://qvc.scene7.com/is/image/QVC/m/98/m66298.001" alt="Chaufa de pollo" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Chaufa de pollo</h4>
+              <h4 class="price">S/16.00</h4>
+            </div>
+            <div class="menu-text">Arroz frito mezclado con trozos de pollo, huevo, cebolla china y salsa de soya.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/fruco/ALITAS-SALSA-1024X1024-px.jpg"
+            alt="Alitas a la BBQ" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Alitas a la BBQ</h4>
+              <h4 class="price">S/16.00</h4>
+            </div>
+            <div class="menu-text">Alitas de pollo cocinadas y cubiertas con salsa barbacoa, que les da un sabor dulce y
+              ahumado.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Macarrones al pesto con churrasco</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Macarrones bañados en salsa de albahaca, ajo, queso y nueces o piñones, con un jugoso
+              churrasco a la parrilla.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://png.pngtree.com/background/20230326/original/pngtree-grilled-meat-with-french-fries-vector-picture-image_2175842.jpg"
+            alt="Parrilla de res con papas fritas" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Parrilla de res con papas fritas</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Carne de res asados a la parrilla, servidos con papas fritas crujientes. Un plato
+              sabroso y sustancioso.
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://es.cravingsjournal.com/wp-content/uploads/2020/06/pollo-saltado-3-500x500.jpg"
+            alt="Pollo saltado" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Pollo saltado</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Trozos de pollo salteados con cebolla, tomate y ají, todo cocinado a fuego alto.
+              Servido con arroz y papas fritas.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://oipacyl.com.es/wp-content/uploads/alitas-de-pollo-con-arroz.jpg"
+            alt="Chaufa con alitas a la BBQ" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Chaufa con alitas a la BBQ</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Arroz frito con trozos de pollo, cebolla china y salsa de soya, acompañado de alitas
+              de pollo glaseadas con una salsa barbacoa dulce y ahumada.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://static.wixstatic.com/media/9755d8_7ac78d4b176e4f43b4b44e1709b9227e~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/9755d8_7ac78d4b176e4f43b4b44e1709b9227e~mv2.jpg"
+            alt="Tallarin saltado de pollo" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Tallarin saltado de pollo</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Fideos de tallarín salteados con trozos de pollo, cebolla, tomate y ají, todo
+              cocinado a fuego alto.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/22/ac/a1/pechuga-de-pollo-a-la.jpg"
+            alt="Filete de pollo a la plancha" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Filete de pollo a la plancha</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Filete de pollo cocido a la plancha, sazonado con sal y especias, acompañado de
+              crujientes papas fritas.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYHlxauKucdIR5ifFhrvjfFJL8Y6SJFPkHSwKoWzlJ9j7NhsnGINCaPbpvEAlUeh42rSthKlzHrQyBD-1xmNq7lHPEA-wSh3E_pzpKftMkZMC3-do3uE1s91rtiunMWMq7YGwuSurujirf/s1600/rEstofado+de+Costillas+con+yuca.jpg"
+            alt="Costillar de res con yucas" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Costillar de res con yucas</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Se cocina el costillar de res a la parrilla o al horno, logrando una carne tierna y
+              jugosa. Acompañado de yucas fritas o sancochadas.</div>
+          </div>
+        </div>
+
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://carniceriaangel.com/wp-content/uploads/2023/02/recetas-churrasco.jpeg"
+            alt="Churrasco a la plancha" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Churrasco a la plancha</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Res cocido en una plancha caliente. Sazonado con sal y pimienta, logrando una carne
+              jugosa y dorada por fuera.
+            </div>
+          </div>
+        </div>
+        <!--Carta-->
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://i.ytimg.com/vi/r2oGrH__hT0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBtRrQkJyQYxpAJD7aR3yN2BhJ0Cw"
+            alt="Lomo saltado" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Lomo saltado</h4>
+              <h4 class="price">S/25.00</h4>
+            </div>
+            <div class="menu-text">Combina tiras de carne de res salteadas a fuego alto con cebolla, tomate y ají.
+              Mezclado con papas fritas y acompañado de arroz.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://cooprenacerandino.com/wp-content/uploads/2020/05/Milanesa-de-pollo.jpg"
+            alt="Milanesa de pollo" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Milanesa de pollo</h4>
+              <h4 class="price">S/24.00</h4>
+            </div>
+            <div class="menu-text">Filete de pollo empanizado con pan rallado y frito hasta quedar dorado y crujiente.
+              Acompañado con papas fritas, ensalada o arroz.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/9f/ed/0c/la-glorietta.jpg"
+            alt="Fetuccini a la huancaina con lomo" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Fetuccini a la huancaina con lomo</h4>
+              <h4 class="price">S/30.00</h4>
+            </div>
+            <div class="menu-text">Plato que combina fetuccini cubiertos con una cremosa salsa huancaína, hecha a base
+              de ají amarillo, queso fresco y leche, acompañado de tiras de lomo de res jugoso.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/ed/64/8a/tallarines-verdes-con.jpg"
+            alt="Tallarin verde con chuleta" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Tallarin verde con chuleta</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Fideos bañados en salsa de albahaca y espinaca, acompañada de una chuleta de cerdo a
+              la plancha.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://i.ytimg.com/vi/itUBskU4HYg/maxresdefault.jpg" alt="Tallarin saltado de res" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Tallarin saltado de res</h4>
+              <h4 class="price">S/24.00</h4>
+            </div>
+            <div class="menu-text">Tallarín salteados a fuego alto con tiras de carne de res, cebolla, tomate y ají,
+              todo aderezado con salsa de soya.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://cdn0.recetasgratis.net/es/posts/4/3/3/lomo_saltado_a_lo_pobre_77334_orig.jpg"
+            alt="Lomo saltado a lo pobre" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Lomo saltado a lo pobre</h4>
+              <h4 class="price">S/28.00</h4>
+            </div>
+            <div class="menu-text">Combina tiras de carne de res salteadas con cebolla, tomate y ají, acompañado de
+              papas fritas, arroz, plátano frito y un huevo frito.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://buenazo.cronosmedia.glr.pe/original/2023/06/19/6490842c015fab27f801c3f6.png"
+            alt="Tallarines verdes con bisteck apanado" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Tallarines verdes con bisteck apanado</h4>
+              <h4 class="price">S/30.00</h4>
+            </div>
+            <div class="menu-text">Pasta bañada en una salsa cremosa de albahaca y espinaca, con un bisteck empanizado y
+              frito hasta quedar crujiente.
+            </div>
+          </div>
+        </div>
+        <!--Marinos-->
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600.jpg"
+            alt="Ceviche carretillero" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Ceviche carretillero</h4>
+              <h4 class="price">S/18.00</h4>
+            </div>
+            <div class="menu-text">Pescado fresco marinado en jugo de limón, ají, cebolla y cilantro. Acompañado de
+              cancha, yuca o camote, y chicharrón de pescado.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://aeronoticias.com.pe/noticiero/wp-content/uploads/2023/08/trucha-frita.jpg"
+            alt="Trucha frita con yucas doradas" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Trucha frita con yucas doradas</h4>
+              <h4 class="price">S/25.00</h4>
+            </div>
+            <div class="menu-text">Trucha fresca frita hasta quedar crujiente, acompañada de yucas doradas y crujientes.
+              Acompañado con ensalada o arroz.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://labarra12cevicheria.com.pe/wp-content/uploads/2023/10/cabrillfrita3-1-600x600.jpg"
+            alt="Lenguado frito al plato" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Lenguado frito al plato</h4>
+              <h4 class="price">S/30.00</h4>
+            </div>
+            <div class="menu-text">Filete de lenguado frito hasta dorarse, sazonado con sal y especias. Acompañado con
+              papas fritas, arroz o ensalada.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://www.paulinacocina.net/wp-content/uploads/2024/03/chupe-de-camaron-Paulina-Cocina-Recetas-Cocina-Recetas-1.jpg"
+            alt="Chupe de camarones" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Chupe de camarones</h4>
+              <h4 class="price">S/35.00</h4>
+            </div>
+            <div class="menu-text">Sopa cremosa y sustanciosa elaborada con camarones frescos, papas, choclo, queso y
+              especias, todo cocido en un caldo sabroso.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://i.ytimg.com/vi/TaTLMSrT8ao/sddefault.jpg" alt="Chicharrón de pescado" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Chicharrón de pescado</h4>
+              <h4 class="price">S/16.00</h4>
+            </div>
+            <div class="menu-text">Trozos de pescado rebozados y fritos hasta que quedan dorados y crujientes.
+              Acompañado con yuca o papas fritas.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://comedera.com/wp-content/uploads/sites/9/2022/02/arroz-chaufa-de-mariscos.jpg"
+            alt="Chaufa marino" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Chaufa marino</h4>
+              <h4 class="price">S/16.00</h4>
+            </div>
+            <div class="menu-text">Arroz frito con mariscos como camarones, calamares y pescado, junto con cebolla
+              china, huevo y salsa de soya.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://buenazo.cronosmedia.glr.pe/original/2020/09/09/5f58f8c082c2f615f804ffdb.jpg"
+            alt="Ceviche mixto" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Ceviche mixto</h4>
+              <h4 class="price">S/25.00</h4>
+            </div>
+            <div class="menu-text">Diferentes tipos de mariscos, como pescado, calamares, y camarones, marinados en jugo
+              de limón, junto con cebolla, ají y cilantro.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://imag.bonviveur.com/ceviche-peruano-de-pescado.jpg" alt="Ceviche de pescado" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Ceviche de pescado</h4>
+              <h4 class="price">S/20.00</h4>
+            </div>
+            <div class="menu-text">Pescado fresco (corvina o lenguado) marinado en jugo de limón, junto con cebolla
+              roja, ají, cilantro y sal.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://static.wixstatic.com/media/9755d8_3e70069af2f4415e902da0f0f27fe2b4~mv2.png/v1/fill/w_1000,h_563,al_c,q_90,usm_0.66_1.00_0.01/9755d8_3e70069af2f4415e902da0f0f27fe2b4~mv2.png"
+            alt="Duo (Ceviche + Chicharron)" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Duo (Ceviche + Chicharron)</h4>
+              <h4 class="price">S/25.00</h4>
+            </div>
+            <div class="menu-text">Una combinación perfecta que une la frescura del ceviche con la textura crujiente del
+              chicharrón.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://i.pinimg.com/736x/45/96/cf/4596cf9445f36cebb17f17787b8ee77b.jpg" alt="Trio marino"
+            class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Trio marino</h4>
+              <h4 class="price">S/35.00</h4>
+            </div>
+            <div class="menu-text">Una irresistible combinación de ceviche fresco, crujiente chicharron de pescado y
+              arroz de mariscos.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://es.cravingsjournal.com/wp-content/uploads/2024/03/cropped-arroz-con-mariscos-5.jpg"
+            alt="Arroz con mariscos" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Arroz con mariscos</h4>
+              <h4 class="price">S/28.00</h4>
+            </div>
+            <div class="menu-text">Arroz sazonado y salteado con una variedad de mariscos frescos, como camarones,
+              calamares y conchas, acompañado de un toque de aji y especias.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://i.pinimg.com/736x/78/12/94/781294fbe0823da60344b96553682735.jpg" alt="Ceviche de camarones"
+            class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Ceviche de camarones</h4>
+              <h4 class="price">S/60.00</h4>
+            </div>
+            <div class="menu-text">Frescos camarones marinados en jugo de limón mezclados con cebolla, aji y cilantro.
+            </div>
+          </div>
+        </div>
+        <!--Bebidas-->
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH4FjFVxEJBu5LH4X7-L-cf-x4yxt81D9U_mSW3e-dQoJ9KyTMiqAaf0wR84MGKqZFtcu0ywz5YsLTBZOnJ4jSngHmwMfoIZbtvaNa7a3yqw1Kj_h1L-29NE8FDhxiYnENg_bvUCmI3r0/s1600/P9250004.JPG"
+            alt="Pisco Sour" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Pisco sour</h4>
+              <h4 class="price">S/25.00</h4>
+            </div>
+            <div class="menu-text">Disfruta de nuestro clásico Pisco sour , preparado con pisco, jugo de limón, jarabe
+              de goma y clara de huevo.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img
+            src="https://static.wixstatic.com/media/d4d860_de21e39d8d0549a0b8965acd7fdc9b47~mv2.jpg/v1/fill/w_480,h_724,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/d4d860_de21e39d8d0549a0b8965acd7fdc9b47~mv2.jpg"
+            alt="Vino perfecto amor" class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Vino perfecto amor</h4>
+              <h4 class="price">S/22.00</h4>
+            </div>
+            <div class="menu-text">Dulce y suave, ideal para acompañar momentos especiales. Su sabor afrutado y delicado
+              lo convierte en la elección perfecta para celebrar con un toque de dulzura.
+            </div>
+          </div>
+        </div>
+        <div class="menu-items col-lg-6 col-sm-12">
+          <img src="https://bodegavelasquez.com/145-medium_default/pisco-quebranta-velasquez.jpg" alt="Pisco quebranta"
+            class="photo">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Pisco quebranta</h4>
+              <h4 class="price">S/25.00</h4>
+            </div>
+            <div class="menu-text">Pisco puro elaborado con uvas quebranta, caracterizado por su sabor suave y afrutado.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
     <script src="../../Capa_Negocio/Menu.js"></script>
 </body>
 </html>

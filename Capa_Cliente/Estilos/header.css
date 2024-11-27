@@ -12,6 +12,7 @@ body{
 }
 
 
+
 nav{
     height: 6rem;
     width: 100vw;
@@ -51,6 +52,7 @@ nav.transparent {
 }
 .nav-links li a{
     text-decoration: none;
+    color: white;
     margin: 0 0.7vw;
 }
 
@@ -114,7 +116,7 @@ nav.transparent {
     display: none;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1400px){
     nav{
         position: fixed;
         z-index: 3;
