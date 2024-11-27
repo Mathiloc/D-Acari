@@ -131,6 +131,7 @@
   .menu label {
     cursor: pointer;
     display: none;
+    color: #000000;
   }
 
   

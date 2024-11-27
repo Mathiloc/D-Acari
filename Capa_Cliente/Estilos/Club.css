@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
-.abajo{
-    margin-top: 200px;
-}
 body{
     margin: 0;
     padding: 0;
-    
-    background-color: #080202;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #000000;
+    color: #ffffff;
 }
 section{
     width: 100%;
@@ -16,38 +12,50 @@ section{
     box-sizing: border-box;
     padding: 1px 0;
     background: #0000;
+    background-color: #000000;
 }
+
 .club h2 {
     color: #ffffff;
-    font-size: 50px;
-    padding: 20px 0;
+    font-size: 70px;
+    padding: 120px 0;
     text-align: center;
     font-family: fantasy;
 }
-
+.container .row {
+    display: flex;
+    justify-content: center;
+}
+.col-sm-4 {
+    display: flex;
+    align-items: stretch;
+}
 .card{
     position: relative;
     max-width: 300px;
-    height: auto;
-    background: linear-gradient(-45deg,#fe0847, #feae3f);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(-45deg, #fe0847, #feae3f);
     margin: 0 auto;
     padding: 40px 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0.1);
+    box-shadow: 0 10px 15px rgb(230, 190, 14);
     transition: .5s;
     overflow: hidden;
 }
 .col-sm-4:nth-child(1) .card,
 .col-sm-4:nth-child(1) .card .title .fa{
-    background: linear-gradient(-45deg,#f4a803, #64b5f6);
+    background: linear-gradient(-45deg,#c22ed0, #07a3b2);
 }
 .col-sm-4:nth-child(2) .card,
 .col-sm-4:nth-child(2) .card .title .fa{
     
-    background: linear-gradient(-45deg,#db1212, #4c82ae);
+    background: linear-gradient(-45deg,#dbe9ea, #7dc387);
 }
 .col-sm-4:nth-child(3) .card,
 .col-sm-4:nth-child(3) .card .title .fa{
-    background: linear-gradient(-45deg,#2d3dec, #3a9117);
+    background: linear-gradient(-45deg,#f6ea41, #f048c6);
 }
 .card:before{
     content: '';
@@ -74,7 +82,7 @@ section{
     position: relative;
     margin: 20px 0 0;
     padding: 0;
-    color: #fff;
+    color: #000000;
     font-size: 28px;
     z-index: 2;
 }
@@ -85,7 +93,7 @@ section{
 .price h4{
     margin: 0;
     padding: 20px 0;
-    color: #fff;
+    color: #000000;
     font-size: 60px;
 }
 .option{
@@ -100,7 +108,7 @@ section{
     margin: 0 0 10px;
     padding: 0;
     list-style: none;
-    color: #fff;
+    color: #000000;
     font-size: 16px;
 }
 .card a{
@@ -124,4 +132,93 @@ section{
 }
 .card:hover{
     transform: scale(1.1);
+}
+
+
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+
+.modal__img{
+    width: 90%;
+    max-width: 300px;
+}
+
+.modal__close{
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+
+@media (max-width:800px) {
+    nav{
+        position: fixed;
+        z-index: 3;
+        background-color: #e27107; /* Asegúrate de que el color de fondo esté definido */
+    }
+    .nav-links {
+        background-color: #e27107; /* Asegúrate de que el color de fondo también esté definido aquí */
+    }
+    .nav-links li a {
+        color: #f2f5f7; /* Asegúrate de que los enlaces también tengan el color correcto */
+    }
+    
+
+
+    .modal__container{
+        padding: 2em 1.5em;
+    }
+
+    
 }
