@@ -11,7 +11,6 @@
 </head>
 <body>
 <?php include '../header/header.php'; ?>
-    
              <div class="header-content container">
 
                 <div class="swiper mySwiper-1">
