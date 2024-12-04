@@ -1,5 +1,10 @@
 <?php
-include '../../../Capa_Dato/Conexion/conexion.php';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+
 if (isset($_POST['registro'])) {
     // Recuperar y validar datos del formulario
     $nombre = $_POST['nombre_cliente'] ?? null;
@@ -44,4 +49,6 @@ if (isset($_POST['registro'])) {
     }
 }
 ?>
+
+
 
