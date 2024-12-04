@@ -3,6 +3,7 @@ session_start();
 require '../../Capa_Dato/Conexion/conexion.php';
 ?>
 <?php include '../../Capa_Dato/Controladores/Inicio_Sesion/ingreso_cliente.php'?>
+<?php include '../../Capa_Dato/Controladores/Registro/registro_cliente.php'; ?> 
 
 
 <!DOCTYPE html>
@@ -62,7 +63,7 @@ require '../../Capa_Dato/Conexion/conexion.php';
 
 
         <div class="form-box register">
-            <form action="registro_cliente.php" method="POST">
+            <form action="login.php" method="POST">
                 <input type="hidden" name="action" value="register">
                 <h1>Regístrate</h1>
                 <div class="input-box">
@@ -114,9 +115,8 @@ require '../../Capa_Dato/Conexion/conexion.php';
                 <button class="btn login-btn">Iniciar sesión</button>
             </div>
         </div>
-     <?php include '../../Capa_Dato/Controladores/Registro/registro_cliente.php'; ?>   
+      
     </div>   
-     
 
 </body>
 <script src="../../Capa_Negocio/login.js"></script>
