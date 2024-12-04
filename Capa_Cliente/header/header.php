@@ -44,15 +44,15 @@ if (session_status() === PHP_SESSION_NONE) {
                 <a href="../../Capa_Cliente/Vista/sobrenosotros.php">Nosotros</a>
             </li>
             <li>
-                <span class="fas fa-question-circle" id="headIcon"></span>
+                <span class="fa-solid fa-cart-shopping" id="headIcon"></span>
                 <a href="../../Capa_Cliente/Vista/Menu.php">Productos</a>
             </li>
             <li>
-                <span class="fas fa-lock" id="headIcon"></span>
-                <a href="#">Reservas</a>
+                <span class="fa-solid fa-pen-to-square" id="headIcon"></span>
+                <a href="../../Capa_Cliente/Vista/Reservas.php">Reservas</a>
             </li>
             <li>
-                <span class="fas fa-lock" id="headIcon"></span>
+                <span class="fa-solid fa-coins" id="headIcon"></span>
                 <a href="../../Capa_Cliente/Vista/PLatillos.php">Club</a>
             </li>
             <?php if (isset($_SESSION['nombre_cliente'])): ?>
