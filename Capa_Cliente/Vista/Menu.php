@@ -20,8 +20,8 @@
     
 
     <section class="menu">
-<h1>1</h1>
-    <h1></h1>
+
+    
     <?php include '../../Capa_Dato/Conexion/conexion.php'; ?>
       <div class="title">
         <h2>Menú D'Acari</h2>

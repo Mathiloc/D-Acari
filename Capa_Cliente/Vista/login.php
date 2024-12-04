@@ -1,7 +1,9 @@
+<?php
+session_start();
+require '../../Capa_Dato/Conexion/conexion.php';
+?>
+<?php include '../../Capa_Dato/Controladores/Inicio_Sesion/ingreso_cliente.php'?>
 
-
-
-<?php include '../../Capa_Dato/Controladores/Inicio_Sesion/Iniciar_Sesion.php'?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +18,20 @@
     <link rel="stylesheet" href="../Estilos/EstiloLogin.css">
 </head>
 <body>
-   <?php include '../../Capa_Cliente/header/header.php'; ?>
-
+   <?php include '../header/header.php'; ?>
+   <?php
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+    // Aquí va tu código de verificación de inicio de sesión
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        // Verificación del correo y la contraseña en la base de datos
+        // Si la verificación es exitosa:
+        $_SESSION['nombre_cliente'] = $nombre_del_cliente; // Suponiendo que ya recuperas el nombre del cliente
+        header("Location: ../../Capa_Cliente/Vista/Index.php"); // Redirige al inicio
+        exit();
+    }
+    ?>
     <div class="container">
         <div class="form-box login">
             <form action="Login.php" method="POST">
