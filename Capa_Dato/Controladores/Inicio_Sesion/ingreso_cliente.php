@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($correo_cliente && $contrasena_cliente) {
 
     // Consulta SQL utilizando consultas preparadas para evitar inyecciones SQL
-    $stmt = $conn->prepare("SELECT Nombre_Cliente FROM cliente WHERE Correo = ? AND Contraseña_Cliente = ?");
+    $stmt = $conn->prepare("SELECT ID_Cliente, Nombre_Cliente FROM cliente WHERE Correo = ? AND Contraseña_Cliente = ?");
     $stmt->bind_param("ss", $correo_cliente, $contrasena_cliente);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         // Si el usuario existe, guarda su nombre en la sesión
         $row = $result->fetch_assoc();
+        $_SESSION['id_cliente'] = $row['ID_Cliente'];
         $_SESSION['documento_cliente'] = $correo_cliente;
         $_SESSION['nombre_cliente'] = $row['Nombre_Cliente'];
         

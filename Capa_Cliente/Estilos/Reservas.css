@@ -301,7 +301,7 @@
   /*formulario*/
   .formulario {
       background-color: #fafafa;
-      max-width: 1000px;
+      max-width: 1200px;
     height: 700px;
       margin: 0px auto;
       box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
@@ -346,10 +346,25 @@
   
   form {
     display: flex;
+    align-items: center; /*AQUI SE CAMBIO*/
     flex-direction: column;
     gap: 15px; /* Espaciado entre campos */
   }
-  
+  .form-group {
+    display: flex;
+    align-items: center;  /* Centra verticalmente los elementos */
+    margin-bottom: 15px;  /* Espacio entre cada grupo de elementos */
+}
+  .form-group label {
+    width: 200px;  /* Establece un ancho fijo para las etiquetas */
+    margin-right: 10px;  /* Espacio entre la etiqueta y el input */
+}
+
+.form-group input {
+  flex: 1;  /* Hace que los inputs ocupen el espacio restante */
+  padding: 8px;
+  font-size: 16px;
+}
   form p {
     margin-bottom: 10px;
     font-weight: 600;
