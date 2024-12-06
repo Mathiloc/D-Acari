@@ -8,7 +8,13 @@ body {
   background-color: #ffffff;
   font-family: "Zilla Slab", serif;
 }
-
+.saludo {
+  font-size: 24px; /* Tamaño adecuado según tu diseño */
+  font-weight: bold;
+  color: #333; /* Cambia el color si es necesario */
+  margin: 0;
+  padding: 10px 0;
+}
 
 
 h2 {
@@ -111,6 +117,7 @@ h4 {
   color: #fff;
   transition: .3s ease-in-out;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .cart-button:hover {

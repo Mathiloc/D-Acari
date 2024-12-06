@@ -32,7 +32,11 @@ header{
     height: 100%;
     padding: 4%;
     width: 20%;
-    /* justify-content: space-evenly; */
+    /*justify-content: space-evenly; */
+}
+.saludo {
+    font-size: 40px; /* Ajusta el tamaño del texto según sea necesario */
+    white-space: nowrap; /* Evita que el texto salte a la siguiente línea */
 }
 .brand .fa-github{
   font-size: 70px;

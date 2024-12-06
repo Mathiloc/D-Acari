@@ -214,7 +214,7 @@
   }
 
   .tabs input[type="radio"]:checked + label{
-    border-bottom: 2px solid #db241b;
+    border-bottom: 2px solid #e27107;
     color: #ffffff;
   }
   .tabs input[type="radio"]:checked + label + .tab {
@@ -265,7 +265,7 @@
   }
 
   .product-txt p{
-    color: #a7a7a7;
+    color: #ffffff;
     font-size: 16;
     margin-bottom: 15px;
 
@@ -297,7 +297,7 @@
 
   .info-txt h2{
     font-size: 35px;
-    color: #ffffff;
+    color: #0a0a0a;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -305,14 +305,14 @@
 
   .info-txt p{
     font-size: 18px;
-    color: #a7a7a7;
+    color: #171616;
     margin-bottom: 50px;
   }
 
   .btn-2 {
     display: inline-block;
     padding: 15px 35px;
-    background-color: #db241b;
+    background-color: #e27107;
     color: #ffffff;
     font-weight: 800;
     text-transform: uppercase;
@@ -371,13 +371,13 @@
     justify-content: space-between;
   }
   .links h4{
-    color: #ffffff;
+    color: #040404;
     text-transform: uppercase;
     margin-bottom: 25px;
   }
 
   .links ul li a{
-    color: #ffffff;
+    color: #040404;
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
