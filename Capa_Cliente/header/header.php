@@ -59,13 +59,13 @@ if (session_status() === PHP_SESSION_NONE) {
           
             <?php if (isset($_SESSION['nombre_cliente'])): ?>
                 <!-- Mostrar el nombre del cliente si está logueado -->
-                <li>
+                <!-- <li>
                     <span class="fa-solid fa-user" id="headIcon"></span>
                     <a href="#">Hola, <?php echo $_SESSION['nombre_cliente']; ?></a>
-                </li>
+                </li> -->
                 <li>
                     <span class="fa-solid fa-sign-out-alt" id="headIcon"></span>
-                    <a href="../../Capa_Cliente/Vista/logout.php">Cerrar sesión</a>
+                    <a href="../../Capa_Cliente/Vista/logout.php">Salir</a>
                 </li>
             <?php else: ?>
                 <!-- Si no está logueado, mostrar opción para ingresar -->

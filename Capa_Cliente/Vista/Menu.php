@@ -89,7 +89,10 @@ if (isset($_GET['agregar'])) {
              <div class="menu-action">
                <h4 class="price">S/' . number_format($row['precio_producto'], 2) .'</h4>
                <!-- Enlace para añadir al carrito -->
-               <a href="carrito.php?agregar=1&id=' . $row['id_producto'] . '&nombre=' . urlencode($row['nombre_producto']) . '&precio=' . $row['precio_producto'] . '" class="cart-button">Añadir al Carrito</a>
+                   <a href="carrito.php?agregar=1&id=' . $row['id_producto'] . 
+                           '&nombre=' . urlencode($row['nombre_producto']) . 
+                           '&precio=' . $row['precio_producto'] . 
+                           '&imagen=' . urlencode($row['imagen']) . '" class="cart-button">Añadir al Carrito</a>
                </div>
               </div>
            </div>';
@@ -107,6 +110,10 @@ if (isset($_GET['agregar'])) {
     </section>
   </div>
   <!-- <script src="../../Capa_Negocio/Menu.js"></script> -->
+  
+
+
+
   <script src="../header/header.js"></script>
 </body>
 

@@ -1,9 +1,6 @@
-<?php  
-include '../../Capa_Dato/Conexion/config.php';
-include '../../Capa_Dato/Conexion/conexion.php';
-include 'carrito.php';
-include '../header/header.php';
-?>
+
+
+
 
 <?php
 if($_POST){

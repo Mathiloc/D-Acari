@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -6,6 +7,7 @@ if (isset($_GET['agregar'])) {
     $id_producto = (int)$_GET['id'];
     $nombre_producto = $_GET['nombre'];
     $precio_producto = (float)$_GET['precio'];
+    
 
     // Verificar si el carrito ya tiene el producto
     $producto_encontrado = false;
@@ -26,12 +28,13 @@ if (isset($_GET['agregar'])) {
             'id' => $id_producto,
             'nombre' => $nombre_producto,
             'precio' => $precio_producto,
-            'cantidad' => 1
+            'cantidad' => 1,
+            
         ];
     }
 
     // Redirigir al carrito para actualizar la vista
-    header('Location: carrito.php');
+    header('Location: Menu.php');
     exit();
 }
 
@@ -61,6 +64,9 @@ if (!isset($_SESSION['CARRITO'])) {
 $total = 0;
 ?>
 
+<?php 
+    include '../../Capa_Cliente/header/header.php'
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -75,6 +81,7 @@ $total = 0;
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
+           
             <th>Producto</th>
             <th>Precio</th>
             <th>Cantidad</th>
@@ -90,6 +97,7 @@ $total = 0;
                 $total += $subtotal;
                 ?>
                 <tr>
+                
                     <td><?= htmlspecialchars($item['nombre']) ?></td>
                     <td>S/ <?= number_format($item['precio'], 2) ?></td>
                     <td><?= $item['cantidad'] ?></td>
