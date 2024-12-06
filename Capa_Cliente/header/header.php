@@ -18,10 +18,10 @@ if (session_status() === PHP_SESSION_NONE) {
             <!-- <span class="fab fa-github"></span> -->
             <img src="../Img/imagenes/logoredondo.png" alt="Logo D'Acari" class="logo" />
             <!-- Aquí mostramos "Hola, Nombre" si el usuario ha iniciado sesión -->
-        <h1>
+        <h1 class="saludo">
             <?php
             if (isset($_SESSION['nombre_cliente'])) {
-                echo "Hola, " . $_SESSION['nombre_cliente']; // Muestra el nombre del usuario
+                echo "Hola," . $_SESSION['nombre_cliente']; // Muestra el nombre del usuario
             } else {
                 echo "D'Acari"; // Muestra "D'Acari" si el usuario no ha iniciado sesión
             }
@@ -52,16 +52,13 @@ if (session_status() === PHP_SESSION_NONE) {
                 <span class="fa-solid fa-pen-to-square" id="headIcon"></span>
                 <a href="../../Capa_Cliente/Vista/Reservas.php">Reservas</a>
             </li>
-            <li>
-                <span class="fa-solid fa-coins" id="headIcon"></span>
-                <a href="../../Capa_Cliente/Vista/PLatillos.php">Club</a>
-            </li>
+            
           
             <?php if (isset($_SESSION['nombre_cliente'])): ?>
                 <!-- Mostrar el nombre del cliente si está logueado -->
                 <!-- <li>
                     <span class="fa-solid fa-user" id="headIcon"></span>
-                    <a href="#">Hola, <?php echo $_SESSION['nombre_cliente']; ?></a>
+                    <a href="#" >Hola,<?php echo $_SESSION['nombre_cliente']; ?></a>
                 </li> -->
                 <li>
                     <span class="fa-solid fa-sign-out-alt" id="headIcon"></span>

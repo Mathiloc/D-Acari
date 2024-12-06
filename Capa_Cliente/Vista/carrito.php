@@ -1,6 +1,12 @@
 
 <?php
 session_start();
+// Verificar si el usuario está logueado
+$usuario_logueado = isset($_SESSION['id_cliente']);
+// Verificar si el usuario está logueado
+
+
+
 
 // Verificar si se ha solicitado agregar un producto al carrito
 if (isset($_GET['agregar'])) {
@@ -56,6 +62,20 @@ if (isset($_GET['eliminar'])) {
     exit();
 }
 
+// Verificar si se ha solicitado agregar más cantidad desde la fila del carrito
+if (isset($_GET['agregarFila'])) {
+    $indice_agregar = (int)$_GET['agregarFila'];
+
+    // Verificar si el índice es válido
+    if (isset($_SESSION['CARRITO'][$indice_agregar])) {
+        // Incrementar la cantidad del producto
+        $_SESSION['CARRITO'][$indice_agregar]['cantidad']++;
+    }
+
+    // Redirigir de nuevo al carrito para actualizar la vista
+    header('Location: carrito.php');
+    exit();
+}
 // Verificar si el carrito existe
 if (!isset($_SESSION['CARRITO'])) {
     $_SESSION['CARRITO'] = []; // Inicializamos el carrito si no existe
@@ -74,6 +94,7 @@ $total = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
 <body>
 <div class="container mt-5">
@@ -82,7 +103,7 @@ $total = 0;
         <thead class="table-dark">
         <tr>
            
-            <th>Producto</th>
+            <th>Productos</th>
             <th>Precio</th>
             <th>Cantidad</th>
             <th>Subtotal</th>
@@ -104,6 +125,7 @@ $total = 0;
                     <td>S/ <?= number_format($subtotal, 2) ?></td>
                     <td>
                         <a href="carrito.php?eliminar=<?= $indice ?>" class="btn btn-danger btn-sm">Eliminar</a>
+                        <a href="carrito.php?agregarFila=<?= $indice ?>" class="btn btn-success btn-sm">Agregar</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
@@ -124,10 +146,24 @@ $total = 0;
     <div class="text-end">
         <a href="Menu.php" class="btn btn-primary">Seguir Comprando</a>
         <?php if (!empty($_SESSION['CARRITO'])): ?>
-            <a href="pagar.php" class="btn btn-success">Proceder al Pago</a>
+            <button id="procederPago" class="btn btn-success">Proceder al Pago</button>
         <?php endif; ?>
     </div>
+    
+
+                      
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('procederPago').addEventListener('click', function() {
+        <?php if (!$usuario_logueado): ?>
+            alert("Si quieres continuar, debes registrarte o iniciar sesión.");
+            window.location.href = "login.php";
+        <?php else: ?>
+            window.location.href = "pagar.php"; // Redirigir a la página de pago si está logueado
+        <?php endif; ?>
+    });
+</script>
+
 </body>
 </html>

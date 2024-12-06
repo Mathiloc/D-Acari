@@ -52,12 +52,7 @@ require '../../Capa_Dato/Conexion/conexion.php';
 
                 <button type="submit" value="Ingresar" class="btn">Iniciar sesión</button>
                 
-                <p>O registrarse con</p>
-                <div class="social-icons">
-                    <a href="#" ><i class="fa-brands fa-google"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-apple"></i></a>
-                </div>
+                
             </form>
         </div>
 
@@ -95,12 +90,8 @@ require '../../Capa_Dato/Conexion/conexion.php';
                     <i class="fa-solid fa-lock"></i>
                 </div>
                 <button type="submit" class="btn" name="registro">Registrarse</button>
-                <p>O iniciar sesión con</p>
-                <div class="social-icons">
-                    <a href="#" ><i class="fa-brands fa-google"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-apple"></i></a>
-                </div>
+                
+                
             </form>
         </div>
         <div class="toggle-box">

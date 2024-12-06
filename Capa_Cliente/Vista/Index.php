@@ -22,14 +22,11 @@
                                     <div class="slider-txt">
                                         <h1>Lomo Saltado</h1>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                             Sapiente aliquid error dolore ad aliquam! Facere itaque 
-                                             perferendis excepturi eos. Assumenda eum vitae unde 
-                                             laboriosam, saepe in culpa aut molestias reiciendis.
+                                        Combina tiras de carne de res salteadas a fuego alto con cebolla, tomate y ají. Mezclado con papas fritas y acompañado de arroz
                                         </p>
                                         <div class="botones">
-                                            <a href="#" class="btn-1">Comprar</a>
-                                            <a href="#" class="btn-1">Menu</a>
+                                            <a href="#" class="btn-1">S/. 16.00</a>
+                                            <a href="../../Capa_Cliente//Vista/Menu.php" class="btn-1">Menu</a>
                                         </div>
 
                                     </div>
@@ -43,14 +40,11 @@
                                  <div class="slider-txt">
                                      <h1>Ceviche</h1>
                                      <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                          Sapiente aliquid error dolore ad aliquam! Facere itaque 
-                                          perferendis excepturi eos. Assumenda eum vitae unde 
-                                          laboriosam, saepe in culpa aut molestias reiciendis.
+                                     Diferentes tipos de mariscos, como pescado, calamares, y camarones, marinados en jugo de limón, junto con cebolla, ají y cilantro.
                                      </p>
                                      <div class="botones">
-                                         <a href="#" class="btn-1">Comprar</a>
-                                         <a href="#" class="btn-1">Menu</a>
+                                         <a href="#" class="btn-1" >S/. 25.00</a>
+                                         <a href="../../Capa_Cliente//Vista/Menu.php" class="btn-1">Menu</a>
                                      </div>
 
                                  </div>
@@ -64,14 +58,11 @@
                              <div class="slider-txt">
                                  <h1>Alitas BBQ</h1>
                                  <p>
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                      Sapiente aliquid error dolore ad aliquam! Facere itaque 
-                                      perferendis excepturi eos. Assumenda eum vitae unde 
-                                      laboriosam, saepe in culpa aut molestias reiciendis.
+                                 Alitas de pollo cocinadas y cubiertas con salsa barbacoa, que les da un sabor dulce y ahumado.
                                  </p>
                                  <div class="botones">
-                                     <a href="#" class="btn-1">Comprar</a>
-                                     <a href="#" class="btn-1">Menu</a>
+                                     <a href="#" class="btn-1">S/. 16.00</a>
+                                     <a href="../../Capa_Cliente//Vista/Menu.php" class="btn-1">Menu</a>
                                  </div>
 
                              </div>
@@ -264,12 +255,11 @@
         <div class="info-txt">
             <h2>Informacion:</h2>
             <p>
-                 
-                Voluptate perferendis fuga inventore dignissimos animi, 
-                id est facilis, natus illo, perspiciatis tenetur autem rerum 
-                assumenda excepturi voluptatem illum dolorum. Sequi, doloremque.
+            "En nuestro restaurante, todos los productos son preparados con tradición iqueña, combinando recetas ancestrales, ingredientes frescos y el auténtico sabor que caracteriza a nuestra tierra."
+
+Esta versión resalta tanto la tradición como la calidad de los ingredientes, ideal para transmitir la esencia de tu restaurante. ¿Qué te parece?
             </p>
-            <a href="#" class="btn-2">Mas informacion</a>
+            <a href="../Vista/sobrenosotros.php" class="btn-2">Mas informacion</a>
         </div>
         
     </section>
@@ -290,10 +280,10 @@
                 <div class="txt">
                     <h4>Horario</h4>
                     <p>
-                        Luner a Viernes :9 am - 8 pm 
+                        Luner a Viernes :7 am - 10 pm 
                     </p>
                     <p>
-                         Sabado a Domingo  : 11 am - 7 pm
+                         Sabado a Domingo  : 9 am - 10 pm
                     </p>
                 </div>
                 <div class="txt">
@@ -333,67 +323,8 @@
        
     </section>
 
-    <footer class="footer container">
-
-        <img class="logo-2" src="../Img/imagenes/logoredondo.png" alt="">
-        <div class="links">
-            <h4>Sitios</h4>
-            <ul>
-                <li><a href="index.html"> Inicio</a></li>
-                <li><a href="sobrenosotros.html"> Sobre Nosotros</a></li>
-                <li><a href="Menu.html">  Productos</a></li>
-                <li><a href="#"> Reservas</a></li>
-                <li><a href="Club.html"></i> Club</a></li>
-                <li><a href="login2.html"></i> Registrate</i></a></li>
-            </ul>
-
-        </div>
-        <div class="links">
-            <h4>Platos a la Carta</h4>
-            <ul>
-                <li><a href="#">Criollos</a></li>
-                <li><a href="#">Marinos</a></li>
-                <li><a href="#">Mixtos</a></li>
-                <li><a href="#">Hamburguesas</a></li>
-
-
-            </ul>
-
-        </div>
-        <div class="links">
-            <h4>Sitios web</h4>
-            <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">Whats App</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twiter</a></li>
-
-
-            </ul>
-
-        </div>
-        <div class="links">
-            <h4>Redes Sociales</h4>
-            <div class="socials">
-                <a href="#">
-                    <div class="social">
-                        <img src="../Img/images/s1.svg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social">
-                        <img src="../Img/images/s2.svg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social">
-                        <img src="../Img/images/s3.svg" alt="">
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </footer>
+    
+       
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
