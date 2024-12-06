@@ -1,19 +1,16 @@
-
 <?php
 session_start();
+include_once '../../Capa_Dato/Conexion/conexion.php'; // Asegúrate de que esta ruta esté correcta
+
 // Verificar si el usuario está logueado
 $usuario_logueado = isset($_SESSION['id_cliente']);
-// Verificar si el usuario está logueado
-
-
-
+$total = 0;
 
 // Verificar si se ha solicitado agregar un producto al carrito
 if (isset($_GET['agregar'])) {
     $id_producto = (int)$_GET['id'];
     $nombre_producto = $_GET['nombre'];
     $precio_producto = (float)$_GET['precio'];
-    
 
     // Verificar si el carrito ya tiene el producto
     $producto_encontrado = false;
@@ -35,7 +32,6 @@ if (isset($_GET['agregar'])) {
             'nombre' => $nombre_producto,
             'precio' => $precio_producto,
             'cantidad' => 1,
-            
         ];
     }
 
@@ -76,17 +72,15 @@ if (isset($_GET['agregarFila'])) {
     header('Location: carrito.php');
     exit();
 }
+
 // Verificar si el carrito existe
 if (!isset($_SESSION['CARRITO'])) {
     $_SESSION['CARRITO'] = []; // Inicializamos el carrito si no existe
 }
-
-$total = 0;
 ?>
 
-<?php 
-    include '../../Capa_Cliente/header/header.php'
-?>
+<?php include '../../Capa_Cliente/header/header.php' ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -94,7 +88,6 @@ $total = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
 </head>
 <body>
 <div class="container mt-5">
@@ -102,7 +95,6 @@ $total = 0;
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
-           
             <th>Productos</th>
             <th>Precio</th>
             <th>Cantidad</th>
@@ -118,7 +110,6 @@ $total = 0;
                 $total += $subtotal;
                 ?>
                 <tr>
-                
                     <td><?= htmlspecialchars($item['nombre']) ?></td>
                     <td>S/ <?= number_format($item['precio'], 2) ?></td>
                     <td><?= $item['cantidad'] ?></td>
@@ -149,10 +140,8 @@ $total = 0;
             <button id="procederPago" class="btn btn-success">Proceder al Pago</button>
         <?php endif; ?>
     </div>
-    
-
-                      
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     document.getElementById('procederPago').addEventListener('click', function() {
