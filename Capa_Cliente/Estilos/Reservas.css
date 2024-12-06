@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
   }
   body{
-    background-color: #000000;
+    background-color: #ffffff;
   }
   .heading{
     width: 90%;
@@ -33,7 +33,7 @@
   }
   .heading p{
     font-size: 18px;
-    color: white;
+    color: rgb(8, 8, 8);
     margin-bottom: 35px;
   }
   .container{
@@ -72,7 +72,7 @@
   .about-content p{
     font-size: 18px;
     line-height: 1.5;
-    color: #fff;
+    color: rgb(8, 8, 8);
   }
   .about-content .read-more{
     display: inline-block;

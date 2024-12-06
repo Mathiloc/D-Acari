@@ -276,7 +276,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <input type="text" id="zona" name="zona" required>
       
           <button type="submit">Realizar Reserva</button>
-</form>
+          </form>
           </div>
         </div>
       </div>	

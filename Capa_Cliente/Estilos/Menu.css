@@ -64,7 +64,7 @@ h2 {
   justify-content: space-between;
   min-height: 190px;
   padding-bottom: 15px;
-  color: #fff;
+  color: #000000;
 }
 
 .menu-title {
@@ -79,6 +79,7 @@ h4 {
 
 .menu-text {
   padding-top: 20px;
+  color: #000000;
 }
 
 .price-buy-container {

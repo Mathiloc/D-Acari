@@ -27,24 +27,25 @@ if (session_status() === PHP_SESSION_NONE) {
             }
             ?>
         </h1>
+        
         </div>
         <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
         <div class="navbar" id="nav">
-        <div class="searchBox">
+        <!-- <div class="searchBox">
             <input type="text" placeholder="Search Here..."/>
-            <!-- <span class="fas fa-search" id="searchIcon"></span> -->
-        </div>
+            <span class="fas fa-search" id="searchIcon"></span> 
+        </div> -->
         <ul>
             <li>
                 <span class="fas fa-home" id="headIcon"></span>
-                <a href="../../Capa_Cliente/Vista/Index.php">Inicio</a>
+                <a href="../../Capa_Cliente/Vista/Index.php" >Inicio</a>
             </li>
             <li>
                 <span class="fas fa-user-circle" id="headIcon"></span>
                 <a href="../../Capa_Cliente/Vista/sobrenosotros.php">Nosotros</a>
             </li>
             <li>
-                <span class="fa-solid fa-cart-shopping" id="headIcon"></span>
+                <span class="fa-solid fa-shop" id="headIcon"></span>
                 <a href="../../Capa_Cliente/Vista/Menu.php">Productos</a>
             </li>
             <li>
@@ -55,6 +56,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 <span class="fa-solid fa-coins" id="headIcon"></span>
                 <a href="../../Capa_Cliente/Vista/PLatillos.php">Club</a>
             </li>
+          
             <?php if (isset($_SESSION['nombre_cliente'])): ?>
                 <!-- Mostrar el nombre del cliente si está logueado -->
                 <li>
@@ -72,6 +74,20 @@ if (session_status() === PHP_SESSION_NONE) {
                     <a href="../../Capa_Cliente/Vista/Login.php">Ingresar</a>
                 </li>
             <?php endif; ?>
+            <li>
+                    <span class="fa-solid fa-cart-shopping" id="headIcon"></span>
+                    <h1><a class="nav-link" href="carrito.php">
+                    (<?php 
+                    $cantidadTotal = 0;
+                    if (!empty($_SESSION['CARRITO'])) {
+                        foreach ($_SESSION['CARRITO'] as $producto) {
+                            $cantidadTotal += $producto['cantidad'];
+                        }
+                    }
+                    echo $cantidadTotal;
+                    ?>)</a></h1>
+            </li>
+            
 
         </ul>
         

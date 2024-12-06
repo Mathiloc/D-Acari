@@ -49,12 +49,12 @@ header{
 }
 .navbar {
     position: relative;
-    width: 70%;
+    width: 100%;
     padding: 5%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .searchBox {
@@ -82,18 +82,22 @@ header{
 ul{
     width: 60%;
     text-align: center;
+    display: flex;
+    padding: 0;
     
 }
 
 ul li{
-    display: inline-block;
-    margin-left: 4%;
+    display: inline-flex;
+    margin-left: 20px;
     transition: all 0.5s ease;
     text-align: center;
     cursor: pointer;
     padding: 1%;
     height: 33px;
-    overflow: hidden;   
+    overflow: hidden;  
+    align-items: center;/* Alineación vertical */
+    line-height: 35px;  /* Ajustar el espacio vertical entre los elementos */
     
 }
 ul li span{
@@ -114,8 +118,11 @@ ul li a{
     font-size: 18px;
     color: white; 
     display: inline-block;
-    padding: 1%;
+    padding: 0 10px;/* Ajustar el padding para que las letras no queden tan abajo */
     
+}
+ul li:hover {
+    height: 45px;
 }
 ul li a:active,
 :focus {
